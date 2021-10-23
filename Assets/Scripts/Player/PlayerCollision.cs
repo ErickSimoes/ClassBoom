@@ -19,4 +19,5 @@ public class PlayerCollision : MonoBehaviour
     public void Killed() {
         Destroy(this.gameObject);
     }
+
 }

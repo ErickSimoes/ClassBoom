@@ -6,11 +6,11 @@ public class BombBehaviour : MonoBehaviour
 {
     [SerializeField] float bombCoolddown = 0.5f;
     [SerializeField] LayerMask Destructable;
-
+    bool exploded = false;
     [SerializeField] Collider2D[] colls;
     [SerializeField] SpriteRenderer spr;
     [SerializeField] SpriteRenderer[] chilldreenSpr;
-
+	
     void Start()
     {
         foreach(Collider2D coll in colls) {
@@ -28,20 +28,27 @@ public class BombBehaviour : MonoBehaviour
 
 
     void explode() {
-        spr.enabled = false;
+        exploded = true;
+        if(exploded) {
+            spr.enabled = false;
 
-        foreach(Collider2D coll in colls) {
-            coll.enabled = true;
-        }   
+            foreach(Collider2D coll in colls) {
+                coll.enabled = true;
+            }   
 
-        foreach (SpriteRenderer sprChild in chilldreenSpr) {
-            sprChild.enabled = true;
+            foreach (SpriteRenderer sprChild in chilldreenSpr) {
+                sprChild.enabled = true;
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(exploded == true && other.gameObject.tag == "Player")
-        other.gameObject.GetComponent<PlayerCollision>().Killed();
+        if(exploded && other.gameObject.tag == "Player")
+            other.gameObject.GetComponent<PlayerCollision>().Killed();
+
+        if(other.gameObject.tag == "DestructableBrick") {
+            other.gameObject.GetComponent<SelfDestruction>().DestroyMySelf();
+        }
     }
     void endOfExplosion(){
         Destroy(this.gameObject);
