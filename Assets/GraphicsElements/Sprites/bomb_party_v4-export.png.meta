@@ -65,6 +65,12 @@ TextureImporter:
   - first:
       213: 5850489279181385016
     second: bomb5
+  - first:
+      213: -3218518063938960749
+    second: explosioncenter
+  - first:
+      213: 3867334242943583028
+    second: explosiontrace
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -95,7 +101,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -590,6 +596,48 @@ TextureImporter:
       bones: []
       spriteID: 83d66df800d113150800000000000000
       internalID: 5850489279181385016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosioncenter
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3928dbf8fd68553d0800000000000000
+      internalID: -3218518063938960749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosiontrace
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 29
+        width: 291
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4334b5201088ba530800000000000000
+      internalID: 3867334242943583028
       vertices: []
       indices: 
       edges: []

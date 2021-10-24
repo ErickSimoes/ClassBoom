@@ -2,21 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCollision : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class PlayerCollision : MonoBehaviour {
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.tag == "Explosion") {
+            Killed();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.tag == "Enemy") {
+            Killed();
+        }
     }
 
-    public void Killed() {
+    private void Killed() {
         Destroy(this.gameObject);
     }
 
