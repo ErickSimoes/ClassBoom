@@ -39,7 +39,7 @@ public class PlayerBehaviour : MonoBehaviour
             graphic.flipX = true;
         }
 
-        print("velocidade x : " + movingInputs.x + "  velocidade y : " + movingInputs.y + "  movement : " + movingInputs.SqrMagnitude());
+        // print("velocidade x : " + movingInputs.x + "  velocidade y : " + movingInputs.y + "  movement : " + movingInputs.SqrMagnitude());
 
         //animation
         anim.SetFloat("xVelocity", Mathf.Abs(movingInputs.x));

@@ -9,6 +9,8 @@ public class BombBehaviour : MonoBehaviour
     bool exploded = false;
     [SerializeField] SpriteRenderer spr;
     [SerializeField] GameObject explosionGameObject;
+
+    [SerializeField] float rayRange = 2f;
 	
     void Start()
     {
@@ -18,7 +20,7 @@ public class BombBehaviour : MonoBehaviour
         Invoke("endOfExplosion", bombCoolddown + 0.5f);
     }
 
-
+    
 
     void explode() {
         exploded = true;
