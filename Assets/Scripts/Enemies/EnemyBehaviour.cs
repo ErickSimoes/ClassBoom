@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCollision : MonoBehaviour {
+public class EnemyBehaviour : MonoBehaviour {
     private LifeController _lifeController;
 
     private void Awake() {
@@ -10,12 +10,7 @@ public class PlayerCollision : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "Explosion") {
-            _lifeController.TakeDamage(1);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.tag == "Enemy") {
+            print("babu");
             _lifeController.TakeDamage(1);
         }
     }
