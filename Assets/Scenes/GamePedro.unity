@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DumbEnemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5041902939271227809, guid: d6d5b8ef8adb77c4183576f334ce3b60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5041902939271227810, guid: d6d5b8ef8adb77c4183576f334ce3b60, type: 3}
       propertyPath: Direction.x
       value: 1
@@ -325,6 +329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DumbEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5041902939271227809, guid: d6d5b8ef8adb77c4183576f334ce3b60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5041902939271227810, guid: d6d5b8ef8adb77c4183576f334ce3b60, type: 3}
       propertyPath: Direction.x
       value: 0
@@ -389,6 +397,10 @@ PrefabInstance:
     - target: {fileID: 5041902939271227809, guid: d6d5b8ef8adb77c4183576f334ce3b60, type: 3}
       propertyPath: m_Name
       value: DumbEnemy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5041902939271227809, guid: d6d5b8ef8adb77c4183576f334ce3b60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5041902939271227810, guid: d6d5b8ef8adb77c4183576f334ce3b60, type: 3}
       propertyPath: Direction.x
@@ -4153,7 +4165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1717857465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4240,7 +4252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717857464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.49, y: 3.49, z: 0}
+  m_LocalPosition: {x: -6.63, y: -2.54, z: 0}
   m_LocalScale: {x: 0.71672404, y: 0.71672404, z: 0.71672404}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4275,11 +4287,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b37c37329199154880af086efdd4835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyTag: 
-  winDoor: {fileID: 0}
-  tilemap: {fileID: 0}
-  limitX: 0
-  limitY: 0
+  enemyTag: Enemy
+  winDoor: {fileID: 5565038396366075537, guid: 32e45b879fc86bb4c833bc25c3b9c4f9, type: 3}
+  tilemap: {fileID: 1083269600}
+  destructibleTile: {fileID: 11400000, guid: 7cfde197c5e45474fbc3ac03e97ab522, type: 2}
+  limitX: {x: -6.63, y: 7.56}
+  limitY: {x: 3.56, y: -2.54}
 --- !u!4 &1900990244
 Transform:
   m_ObjectHideFlags: 0
@@ -4435,11 +4448,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 243556224628247210, guid: 597cd47310e2b744cb0f584368c7f84c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.47
+      value: -5.41
       objectReference: {fileID: 0}
     - target: {fileID: 243556224628247210, guid: 597cd47310e2b744cb0f584368c7f84c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.51
+      value: -2.41
       objectReference: {fileID: 0}
     - target: {fileID: 243556224628247210, guid: 597cd47310e2b744cb0f584368c7f84c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4477,6 +4490,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomb
       objectReference: {fileID: 0}
+    - target: {fileID: 243556224628247252, guid: 597cd47310e2b744cb0f584368c7f84c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 597cd47310e2b744cb0f584368c7f84c, type: 3}
 --- !u!1001 &5041902940725357681
@@ -4489,6 +4506,10 @@ PrefabInstance:
     - target: {fileID: 5041902939271227809, guid: d6d5b8ef8adb77c4183576f334ce3b60, type: 3}
       propertyPath: m_Name
       value: DumbEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5041902939271227809, guid: d6d5b8ef8adb77c4183576f334ce3b60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5041902939271227812, guid: d6d5b8ef8adb77c4183576f334ce3b60, type: 3}
       propertyPath: m_RootOrder
