@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5041902939271227808}
-  speed: 15
+  speed: 20
   Direction: {x: 1, y: 0}
 --- !u!212 &5041902939271227813
 SpriteRenderer:
