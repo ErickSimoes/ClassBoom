@@ -4,34 +4,44 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 public class ExplosionBehaviour : MonoBehaviour
 {
-    [SerializeField] private float rayRange = 2;
-    [SerializeField] private int destrucLayer = 6;
-    [SerializeField] private float rayPoint;
-
-    [SerializeField] RaycastHit2D[] rays;
-
+    [SerializeField] private float rayRange = 2f;
+    [SerializeField] private LayerMask layerMask;
+    private RaycastHit2D rayUp,rayRight, rayDown, rayLeft;
+    [SerializeField] Vector2[] raysDirection;
+    
     private void FixedUpdate() {
-        RaycastHit2D rayLeft = Physics2D.Raycast(new Vector3(transform.position.x + rayPoint, transform.position.y, transform.position.z), -Vector2.right * rayRange, destrucLayer);
-        if(rayLeft) {
-            explosion(rayLeft.collider.gameObject);            
-        }
+        RaycastHit2D rayUp = Physics2D.Raycast(transform.position, raysDirection[0], rayRange, layerMask, 0);
+        RaycastHit2D rayRight = Physics2D.Raycast(transform.position, raysDirection[1], rayRange, layerMask, 0);
+        RaycastHit2D rayDown = Physics2D.Raycast(transform.position, raysDirection[2], rayRange, layerMask, 0);
+        RaycastHit2D rayLeft = Physics2D.Raycast(transform.position, raysDirection[3], rayRange, layerMask, 0);
+        
+        if(rayLeft.collider != null) 
+            explosionOfCreatures(rayLeft.collider.gameObject);
+        if(rayUp.collider != null) 
+            explosionOfCreatures(rayUp.collider.gameObject);
+        if(rayDown.collider != null) 
+            explosionOfCreatures(rayDown.collider.gameObject);
+        if(rayRight.collider != null) {
+            explosionOfCreatures(rayRight.collider.gameObject);  
+        } 
+            
     }
 
-    private void explosion(GameObject obj) {
+    private void explosionOfCreatures(GameObject obj) {
         print(obj.tag);
-        if(obj.layer == destrucLayer) {
+        if(obj.layer == 6) {
             obj.GetComponent<LifeController>().TakeDamage(1);
-        } else if(obj.tag == "DestructableBrick") {
-            Tilemap tilemap = obj.GetComponent<Tilemap>();
-            var tilePos = tilemap.WorldToCell(obj.transform.position);
-            Debug.Log("location:" + tilePos);
-            tilemap.SetTile(tilePos, null);
-            tilemap.SetTile(new Vector3Int(tilePos.x, tilePos.y, tilePos.z), null);
         }
     }
 
     private void OnDrawGizmos() {
-        Vector3 left = transform.TransformDirection(Vector2.left) * rayRange;
-        Debug.DrawRay(new Vector3(transform.position.x + rayPoint, transform.position.y, transform.position.z), left, Color.green);
+        Vector3 up = transform.TransformDirection(raysDirection[0]) * rayRange;
+        Debug.DrawRay(transform.position, up, Color.red);
+        Vector3 right = transform.TransformDirection(raysDirection[1]) * rayRange;
+        Debug.DrawRay(transform.position, right, Color.blue);
+        Vector3 down = transform.TransformDirection(raysDirection[2]) * rayRange;
+        Debug.DrawRay(transform.position, down, Color.yellow);
+        Vector3 left = transform.TransformDirection(raysDirection[3]) * rayRange;
+        Debug.DrawRay(transform.position, left, Color.green);
     }
 }

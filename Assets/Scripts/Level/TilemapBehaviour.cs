@@ -5,38 +5,53 @@ using UnityEngine.Tilemaps;
 public class TilemapBehaviour : MonoBehaviour
 {
     [SerializeField] Tilemap tilemap;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	[SerializeField] Tile wallTile, verticalWallTile;
+	[SerializeField] Tile destructibleTile;
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.tag == "Explosion") {
-            var tilePos = tilemap.WorldToCell(other.gameObject.transform.position);
-            Debug.Log("location:" + tilePos);
-            tilemap.SetTile(tilePos, null);
-            tilemap.SetTile(new Vector3Int(tilePos.x, tilePos.y, tilePos.z), null);
-        }
-    }
+	public GameObject explosionPrefab;
 
-    //  void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     Vector3 hitPosition = Vector3.zero;
-    //     if (tilemap != null && tilemapGameObject == collision.gameObject)
-    //     {
-    //         foreach (ContactPoint2D hit in collision.contacts)
-    //         {
-    //             hitPosition.x = hit.point.x - 0.01f * hit.normal.x;
-    //             hitPosition.y = hit.point.y - 0.01f * hit.normal.y;
-    //             tilemap.SetTile(tilemap.WorldToCell(hitPosition), null);
-    //         }
-    //     }
-    // }
+	public void Explode(Vector2 worldPos) {
+		Vector3Int originCell = tilemap.WorldToCell(worldPos);
+
+		ExplodeCell(originCell);
+		if (ExplodeCell(originCell + new Vector3Int(1, 0, 0)))
+		{
+			ExplodeCell(originCell + new Vector3Int(2, 0, 0));
+		}
+		
+		if (ExplodeCell(originCell + new Vector3Int(0, 1, 0)))
+		{
+			ExplodeCell(originCell + new Vector3Int(0, 2, 0));
+		}
+		
+		if (ExplodeCell(originCell + new Vector3Int(-1, 0, 0)))
+		{
+			ExplodeCell(originCell + new Vector3Int(-2, 0, 0));
+		}
+		
+		if (ExplodeCell(originCell + new Vector3Int(0, -1, 0)))
+		{
+			ExplodeCell(originCell + new Vector3Int(0, -2, 0));
+		}
+
+	}
+
+	bool ExplodeCell (Vector3Int cell)
+	{
+		Tile tile = tilemap.GetTile<Tile>(cell);
+
+		if (tile == wallTile || tile == verticalWallTile) {
+			return false;
+		}
+
+		if (tile == destructibleTile) {
+			tilemap.SetTile(cell, null);
+		}
+
+		Vector3 pos = tilemap.GetCellCenterWorld(cell);
+		Instantiate(explosionPrefab, pos, Quaternion.identity);
+
+		return true;
+	}
 }
