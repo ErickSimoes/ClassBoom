@@ -24,7 +24,7 @@ public class BombBehaviour : MonoBehaviour
 
         Invoke("explode", bombCoolddown);
         Invoke("DisableTrigger", triggerCooldown);
-        Invoke("endOfExplosion", bombCoolddown + 0.5f);
+        Invoke("endOfExplosion", bombCoolddown + 0.2f);
     }
 
     
