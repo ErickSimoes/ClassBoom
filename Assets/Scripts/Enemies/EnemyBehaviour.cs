@@ -10,7 +10,6 @@ public class EnemyBehaviour : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "Explosion") {
-            print("babu");
             _lifeController.TakeDamage(1);
         }
     }
