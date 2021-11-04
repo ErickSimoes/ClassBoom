@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/InitialScene.unity
+    guid: d6d927b73b2784f44b5d9c57d81241ba
+  - enabled: 1
+    path: Assets/Scenes/GamePedro.unity
+    guid: d885d7ad587903e40a23d5a179c903bf
+  - enabled: 1
     path: Assets/Scenes/GamePlayScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -14,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinGame.unity
     guid: 2ff8fd3deeab7824b9783499df3845e7
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerScene.unity
+    guid: 91fb983c168df7f49b5c556637acb4bc
   m_configObjects: {}

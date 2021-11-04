@@ -8,6 +8,8 @@ TagManager:
   - DestructableBrick
   - Explosion
   - Enemy
+  - WinDoor
+  - TilemapBrick
   layers:
   - Default
   - TransparentFX
