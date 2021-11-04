@@ -71,6 +71,96 @@ TextureImporter:
   - first:
       213: 3867334242943583028
     second: explosiontrace
+  - first:
+      213: 6824782681735680504
+    second: Globin_fat_back_idle
+  - first:
+      213: 3197959212988163149
+    second: globin_fat_front_idle
+  - first:
+      213: 237321769505193455
+    second: globin_fat_front_walk0
+  - first:
+      213: -7954290339846222585
+    second: globin_fat_front_walk1
+  - first:
+      213: -3610136450500335843
+    second: globin_fat_side_walk0
+  - first:
+      213: -6568053736217312072
+    second: globin_fat_side_walk1
+  - first:
+      213: -4988017210686635825
+    second: globin_fat_side_walk2
+  - first:
+      213: -832943933457069966
+    second: globin_fat_side_walk3
+  - first:
+      213: 7366248421020803928
+    second: globin_fat_back_walk0
+  - first:
+      213: 2904786063876496371
+    second: globin_fat_back_walk1
+  - first:
+      213: -5117676170622457788
+    second: Globin_blue_back_idle
+  - first:
+      213: 4729364869036237722
+    second: globin_blue_front_idle
+  - first:
+      213: 2134278123146582481
+    second: globin_blue_front_walk0
+  - first:
+      213: 5751167874368096684
+    second: globin_blue_front_walk1
+  - first:
+      213: -9110279513954995438
+    second: globin_blue_side_walk0
+  - first:
+      213: -1700930838459693885
+    second: globin_blue_side_walk1
+  - first:
+      213: 8580299869973651175
+    second: globin_blue_side_walk2
+  - first:
+      213: -2961906944928751239
+    second: globin_blue_side_walk3
+  - first:
+      213: -2644023699170348248
+    second: globin_blue_back_walk0
+  - first:
+      213: -6841865440411983182
+    second: globin_blue_back_walk1
+  - first:
+      213: 9090744968955881769
+    second: Globin_back_idle
+  - first:
+      213: 8271790983866540019
+    second: globin_front_idle
+  - first:
+      213: 408673271190209916
+    second: globin_front_walk0
+  - first:
+      213: 4201273798975563024
+    second: globin_front_walk1
+  - first:
+      213: 4661425558493863908
+    second: globin_side_walk0
+  - first:
+      213: 7304682840235608149
+    second: globin_side_walk1
+  - first:
+      213: 3429704709824910019
+    second: globin_side_walk2
+  - first:
+      213: -4526761842957464326
+    second: globin_side_walk3
+  - first:
+      213: 893391781274580088
+    second: globin_back_walk0
+  - first:
+      213: 4041963153615021575
+    second: globin_back_walk1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -638,6 +728,636 @@ TextureImporter:
       bones: []
       spriteID: 4334b5201088ba530800000000000000
       internalID: 3867334242943583028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Globin_fat_back_idle
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 339
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1d71690bf76be50800000000000000
+      internalID: 6824782681735680504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_fat_front_idle
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 340
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44e850f5fe616c20800000000000000
+      internalID: 3197959212988163149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_fat_front_walk0
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 329
+        width: 132
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedf2d854e22b4300800000000000000
+      internalID: 237321769505193455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_fat_front_walk1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 329
+        width: 132
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d052d541fac9190800000000000000
+      internalID: -7954290339846222585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_fat_side_walk0
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 321
+        width: 115
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17ec3d860836edc0800000000000000
+      internalID: -3610136450500335843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_fat_side_walk1
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 321
+        width: 112
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4071b0de599d4a0800000000000000
+      internalID: -6568053736217312072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_fat_side_walk2
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 321
+        width: 112
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc00d7746c007cab0800000000000000
+      internalID: -4988017210686635825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_fat_side_walk3
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 321
+        width: 112
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2788978d7e9c074f0800000000000000
+      internalID: -832943933457069966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_fat_back_walk0
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 330
+        width: 130
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8532a3e29eb2a3660800000000000000
+      internalID: 7366248421020803928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_fat_back_walk1
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 330
+        width: 130
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb1ddde88fdf4820800000000000000
+      internalID: 2904786063876496371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Globin_blue_back_idle
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 499
+        width: 132
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448219e23ac5af8b0800000000000000
+      internalID: -5117676170622457788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_blue_front_idle
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 499
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93ed188a4412a140800000000000000
+      internalID: 4729364869036237722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_blue_front_walk0
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 488
+        width: 132
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d91a0625aa7e9d10800000000000000
+      internalID: 2134278123146582481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_blue_front_walk1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 489
+        width: 132
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca94953f5b040df40800000000000000
+      internalID: 5751167874368096684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_blue_side_walk0
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 481
+        width: 92
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213b136ec09c19180800000000000000
+      internalID: -9110279513954995438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_blue_side_walk1
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 481
+        width: 91
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c44a121a641568e0800000000000000
+      internalID: -1700930838459693885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_blue_side_walk2
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 482
+        width: 112
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee1c187549531770800000000000000
+      internalID: 8580299869973651175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_blue_side_walk3
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 481
+        width: 93
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97162c1935135e6d0800000000000000
+      internalID: -2961906944928751239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_blue_back_walk0
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 488
+        width: 130
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823bc39447a8e4bd0800000000000000
+      internalID: -2644023699170348248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_blue_back_walk1
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 489
+        width: 130
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2e837b1afcc01a0800000000000000
+      internalID: -6841865440411983182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Globin_back_idle
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 659
+        width: 131
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929e84a6260d82e70800000000000000
+      internalID: 9090744968955881769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_front_idle
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 659
+        width: 132
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffd4a1f21e4bc270800000000000000
+      internalID: 8271790983866540019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_front_walk0
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 650
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c754d76cc26eba500800000000000000
+      internalID: 408673271190209916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_front_walk1
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 650
+        width: 133
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0152818c24ced4a30800000000000000
+      internalID: 4201273798975563024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_side_walk0
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 641
+        width: 93
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef14f029d5b0b040800000000000000
+      internalID: 4661425558493863908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_side_walk1
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 641
+        width: 91
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558822167527f5560800000000000000
+      internalID: 7304682840235608149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_side_walk2
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 641
+        width: 112
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c219912342c89f20800000000000000
+      internalID: 3429704709824910019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_side_walk3
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 641
+        width: 93
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc4abf6616bd21c0800000000000000
+      internalID: -4526761842957464326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_back_walk0
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 649
+        width: 130
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874ff187717f56c00800000000000000
+      internalID: 893391781274580088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globin_back_walk1
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 649
+        width: 130
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706e07ea210f71830800000000000000
+      internalID: 4041963153615021575
       vertices: []
       indices: 
       edges: []

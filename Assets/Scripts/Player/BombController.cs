@@ -7,12 +7,25 @@ public class BombController : MonoBehaviour
     [Header("Bomb")]
     
     [SerializeField] GameObject bomb;
-    [SerializeField] int bombsAmount = 1;
     [SerializeField] Tilemap tilemap;
     bool canLauchBomb = true;
+    float nextLauch = 0;
+    [SerializeField] float cooldown = 3f;
 
+    private void Awake() {
+        tilemap = GameObject.FindGameObjectWithTag("TilemapBrick").GetComponent<Tilemap>();
+    }
+
+    private void Update() {
+        if(Time.time > nextLauch) {
+            canLauchBomb = true;            
+        } else {
+            canLauchBomb = false;
+        }
+    }
     public void LauchBomb() {
-        if (GameObject.FindGameObjectsWithTag("Bomb").Length < bombsAmount) {
+        if (canLauchBomb) {
+            nextLauch = Time.time + cooldown;
             Vector3Int cell = tilemap.WorldToCell(this.transform.position); //change the world position to cell position 
             Vector3 cellCenter = tilemap.GetCellCenterWorld(cell); // get the center of the cell
             Instantiate(bomb, cellCenter, Quaternion.identity);

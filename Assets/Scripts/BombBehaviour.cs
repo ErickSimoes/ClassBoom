@@ -15,15 +15,18 @@ public class BombBehaviour : MonoBehaviour
 	
     private TilemapBehaviour _tilemap;
 
+    [SerializeField] BombController _bombController;
+
     private void Awake() {
         _tilemap = FindObjectOfType<TilemapBehaviour>();
+        _bombController = FindObjectOfType<BombController>();
     }
 
     void Start(){
         explosionGameObject.SetActive(false);
 
         Invoke("explode", bombCoolddown);
-        Invoke("DisableTrigger", triggerCooldown);
+        // Invoke("DisableTrigger", triggerCooldown);
         Invoke("endOfExplosion", bombCoolddown + 0.2f);
     }
 

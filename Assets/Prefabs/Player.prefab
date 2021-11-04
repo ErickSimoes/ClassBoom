@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 7386090304667776827}
   - component: {fileID: 7386090304667776825}
   - component: {fileID: 7386090304667776830}
+  - component: {fileID: 5113753701610720468}
+  - component: {fileID: 605374154640683566}
+  - component: {fileID: 5443005281204076115}
   - component: {fileID: 7386090304667776831}
   m_Layer: 6
   m_Name: Player
@@ -70,10 +73,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abe2d848553819f4b873a9d66dfa71f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 183
-  anim: {fileID: 7386090305336190210}
+  direction: {x: 0, y: 0}
   graphic: {fileID: 7386090305336190211}
-  lauchButtonName: Lauch
+  _bombController: {fileID: 7386090304667776825}
+  _playerInput: {fileID: 605374154640683566}
+  _playerAnimation: {fileID: 5113753701610720468}
 --- !u!114 &7386090304667776827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +106,7 @@ MonoBehaviour:
   bomb: {fileID: 243556224628247252, guid: 597cd47310e2b744cb0f584368c7f84c, type: 3}
   bombsAmount: 1
   tilemap: {fileID: 0}
+  cooldown: 2.8
 --- !u!114 &7386090304667776830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +119,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df976ca0110191b45a55a7e3844c1bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5113753701610720468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386090304667776823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba2e801b435d2f645af1e29fd78e822a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 7386090305336190210}
+  _playerBehaviour: {fileID: 7386090304667776820}
+--- !u!114 &605374154640683566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386090304667776823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308672c0488d1af4dac533cb3ddfca63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputNames:
+  - Horizontal
+  - Vertical
+  lauchButtonName: Lauch
+  movingInputs: {x: 0, y: 0}
+  _playerBehaviour: {fileID: 7386090304667776820}
+--- !u!114 &5443005281204076115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386090304667776823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f314fde5cf8284581dec8900f530f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerBehaviour: {fileID: 7386090304667776820}
+  speed: 187
 --- !u!58 &7386090304667776831
 CircleCollider2D:
   m_ObjectHideFlags: 0

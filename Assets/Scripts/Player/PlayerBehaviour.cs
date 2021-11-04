@@ -7,50 +7,31 @@ public class PlayerBehaviour : MonoBehaviour
 {
     internal Rigidbody2D rb;
 
-    [Header("Movement")]
-    [Range(100,300)]
-    [SerializeField] float speed = 100;
-    Vector2 direction;
-    Vector2 movingInputs;
+    public Vector2 direction;
 
-    [SerializeField] Animator anim;
+    // [SerializeField] Animator anim;
     [SerializeField] SpriteRenderer graphic;
 
-    //buttons
-    [SerializeField] string lauchButtonName = "Launch";
-
     //Childreens
-    internal BombController _bombController;
+    [SerializeField] internal BombController _bombController;
+    [SerializeField] internal PlayerInput _playerInput;
+    [SerializeField] internal PlayerAnimation _playerAnimation;
 
-    private void Awake()
-    {
+    private void Awake() {
         rb = GetComponent<Rigidbody2D>();
-        _bombController = FindObjectOfType<BombController>();
     }
 
-    void Update()
-    {
-        movingInputs.x = Input.GetAxisRaw("Horizontal");
-        movingInputs.y = Input.GetAxisRaw("Vertical");
-
-        if (movingInputs.x > 0) {
+    void Update() {
+        if (_playerInput.movingInputs.x > 0) {
             graphic.flipX = false;
-        } else if(movingInputs.x < 1) {
+        } else if(_playerInput.movingInputs.x < 0) {
             graphic.flipX = true;
         }
 
-        // print("velocidade x : " + movingInputs.x + "  velocidade y : " + movingInputs.y + "  movement : " + movingInputs.SqrMagnitude());
+        SetInput();
+    }
 
-        //animation
-        anim.SetFloat("xVelocity", Mathf.Abs(movingInputs.x));
-        anim.SetFloat("yVelocity", movingInputs.y);
-        anim.SetFloat("speed", movingInputs.SqrMagnitude());
-
-        direction = movingInputs;
-        rb.velocity = direction.normalized * speed * Time.fixedDeltaTime;
-
-        //inputs
-        if (Input.GetButtonDown(lauchButtonName))
-            _bombController.LauchBomb();
+    void SetInput() {
+        direction = _playerInput.movingInputs;
     }
 }
