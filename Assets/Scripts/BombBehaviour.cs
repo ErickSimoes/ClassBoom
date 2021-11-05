@@ -26,7 +26,7 @@ public class BombBehaviour : MonoBehaviour
         explosionGameObject.SetActive(false);
 
         Invoke("explode", bombCoolddown);
-        // Invoke("DisableTrigger", triggerCooldown);
+        Invoke("DisableTrigger", triggerCooldown);
         Invoke("endOfExplosion", bombCoolddown + 0.2f);
     }
 

@@ -11,9 +11,6 @@ public class PlayerCollision : MonoBehaviour {
         _sceneCaller = FindObjectOfType<SceneCaller>();
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        // if(other.gameObject.tag == "Explosion") {
-        //     _lifeController.TakeDamage(1);
-        // }
         switch (other.gameObject.tag) {
             case "Explosion": _lifeController.TakeDamage(1); break;
             case "WinDoor": _sceneCaller.CallScene("WinGame"); break;
