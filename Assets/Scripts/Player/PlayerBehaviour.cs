@@ -17,8 +17,9 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] internal PlayerInput _playerInput;
     [SerializeField] internal PlayerAnimation _playerAnimation;
 
-    private void Awake() {
+    private void Start() {
         rb = GetComponent<Rigidbody2D>();
+        graphic = GetComponentInChildren<SpriteRenderer>();
     }
 
     void Update() {

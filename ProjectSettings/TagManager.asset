@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - WinDoor
   - TilemapBrick
+  - Player2
   layers:
   - Default
   - TransparentFX
