@@ -224,6 +224,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4937245987740903440, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_Name
+      value: ButtonsWrapper
+      objectReference: {fileID: 0}
     - target: {fileID: 4937245988734803024, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -321,12 +325,60 @@ PrefabInstance:
       value: TogglePause
       objectReference: {fileID: 0}
     - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1900990247}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1900990246}
     - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TogglePause
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: CallScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SceneCaller, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: InitialScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937245988892400630, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4937245988892400632, guid: 100f3da63ee8a194fb8b31413a226110, type: 3}
       propertyPath: m_Name

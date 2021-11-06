@@ -17,6 +17,7 @@ public class BombController : MonoBehaviour
     }
 
     private void Update() {
+        tilemap = GameObject.FindGameObjectWithTag("TilemapBrick").GetComponent<Tilemap>();
         if(Time.time > nextLauch) {
             canLauchBomb = true;            
         } else {

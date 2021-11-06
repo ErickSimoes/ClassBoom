@@ -11,6 +11,8 @@ TagManager:
   - WinDoor
   - TilemapBrick
   - Player2
+  - Grid
+  - Storer
   layers:
   - Default
   - TransparentFX

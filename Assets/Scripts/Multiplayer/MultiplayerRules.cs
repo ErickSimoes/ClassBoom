@@ -37,6 +37,7 @@ public class MultiplayerRules : MonoBehaviour
             if(score == 3) {
                 _sceneCaller.CallScene("WinGame");
             }
+            Destroy(GameObject.FindGameObjectWithTag("Grid"));
             Destroy(GameObject.FindGameObjectWithTag(playerTag));
             _initializingScene.SpawnPlayers();
         } 
