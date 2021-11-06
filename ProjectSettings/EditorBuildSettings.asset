@@ -17,10 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinGame.unity
     guid: 2ff8fd3deeab7824b9783499df3845e7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GamePedro 1.unity
     guid: bc10cf5144e32db408b4a4c22d5604bb
   - enabled: 1
     path: Assets/Scenes/MultiplayerScene.unity
     guid: 909185f9ebb8e914c9d396dede7a2aa1
+  - enabled: 1
+    path: Assets/Scenes/ChooseSkinScene.unity
+    guid: 2b1e3c55932f9884287e447c0a2d199a
   m_configObjects: {}
