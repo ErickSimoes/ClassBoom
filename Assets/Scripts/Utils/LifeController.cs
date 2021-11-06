@@ -5,7 +5,7 @@ using UnityEngine;
 public class LifeController : MonoBehaviour {
     [SerializeField] int life = 1;
     private int currentLife;
-
+    [SerializeField] private bool isPlayer;
     void Start() {
         currentLife = life;
     }
@@ -20,5 +20,9 @@ public class LifeController : MonoBehaviour {
     
     private void Death() {
         Destroy(this.gameObject);
+        if(isPlayer) {
+            FindObjectOfType<SceneCaller>().CallScene("GameOver");
+        }
+        
     }
 }

@@ -63,7 +63,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5041902939271227808}
   speed: 25
-  Direction: {x: 0, y: 1}
+  Direction: {x: 1, y: 0}
   spr: {fileID: 5041902939271227813}
   anim: {fileID: 497024311}
 --- !u!212 &5041902939271227813
