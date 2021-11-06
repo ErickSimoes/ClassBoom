@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour
 {
     internal Rigidbody2D rb;
+    public bool storyMode = true;
 
     public Vector2 direction;
 
