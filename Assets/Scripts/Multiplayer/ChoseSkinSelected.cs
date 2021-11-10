@@ -17,9 +17,8 @@ public class ChoseSkinSelected : MonoBehaviour
 
     public void GoToGame(string sceneName) {
         if(allDone) {
-            storer.GetComponent<SaveVariables>().player1SkinIndex = p1.GetComponent<ChooseSkinController>().skinIndex;
-            storer.GetComponent<SaveVariables>().player2SkinIndex = p2.GetComponent<ChooseSkinController>().skinIndex;
-            storer.GetComponent<SaveVariables>().debugar();
+            StorerBehaviour.instance.player1SkinIndex = p1.GetComponent<ChooseSkinController>().skinIndex;
+            StorerBehaviour.instance.player2SkinIndex = p2.GetComponent<ChooseSkinController>().skinIndex;
             _sceneCaller.CallScene(sceneName);
         }
     }

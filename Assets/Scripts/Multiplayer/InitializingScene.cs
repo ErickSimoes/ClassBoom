@@ -11,15 +11,15 @@ public class InitializingScene : MonoBehaviour
     [SerializeField] GameObject Grid;
     [SerializeField] int playersToSpawn;
 
-    [SerializeField] GameObject storer;
+    // [SerializeField] GameObject storer;
     // Start is called before the first frame update
 
-    private void Awake() {
-        storer = GameObject.FindGameObjectWithTag("Storer");
-    }
+    // private void Awake() {
+    //     storer = GameObject.FindGameObjectWithTag("Storer");
+    // }
     void Start() {
-        playerIndexPrefab[0] = storer.GetComponent<SaveVariables>().player1SkinIndex;
-        playerIndexPrefab[1] = storer.GetComponent<SaveVariables>().player2SkinIndex;
+        playerIndexPrefab[0] = StorerBehaviour.instance.player1SkinIndex;
+        playerIndexPrefab[1] = StorerBehaviour.instance.player2SkinIndex;
         SpawnPlayers();
     }
 

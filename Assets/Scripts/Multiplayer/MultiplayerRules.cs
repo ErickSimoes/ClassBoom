@@ -35,6 +35,7 @@ public class MultiplayerRules : MonoBehaviour
             scoreText.text = score.ToString();
         if(score <= 3) {
             if(score == 3) {
+                StorerBehaviour.instance.DestroyStorer();
                 _sceneCaller.CallScene("WinGame");
             }
             Destroy(GameObject.FindGameObjectWithTag("Grid"));

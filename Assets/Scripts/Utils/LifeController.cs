@@ -23,6 +23,5 @@ public class LifeController : MonoBehaviour {
         if(isPlayer) {
             FindObjectOfType<SceneCaller>().CallScene("GameOver");
         }
-        
     }
 }
