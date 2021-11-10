@@ -1,4 +1,4 @@
-🇬🇧 **English** | 🇧🇷 [Português Brasileiro](./RREADME_pt-br.md)
+🇬🇧 **English** | 🇧🇷 [Português Brasileiro](./README_pt-br.md)
 
 ClassBoom
 ==========
